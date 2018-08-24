@@ -7,5 +7,6 @@ public class LocalizationPlugin implements Plugin<Project> {
     void apply(Project project) {
         project.extensions.create('localization', ConfigExtension)
         project.task('localization', type: LocalizationTask)
+        project.task('localeExport', type: LocaleExportTask)
     }
 }
